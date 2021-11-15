@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Relaxed</title>
+	<link rel="shortcut icon" href="icon.jfif">
+</head>
+<body>
+	<header>
+		<a href="file:///C:/Users/pm368/Desktop/redes/index.html" class="logo">Here calm</a>
+		<ul>
+			<li><a href="#index.html" class="active">Home</a></li>
+			<li><a href="#" >About</a></li>
+			<li><a href="#" >Works</a></li>
+			<li><a href="https://www.instagram.com/pablithopp/" target="_blank">Contact</a></li>
+		</ul>
+	</header>
+	<section>
+		<img src="stars.png" id="starts">
+		<img src="moon.png" id="moon">
+		<img src="mountains_behind.png" id="mountains_behind">
+		<h2 id="text">Welcome</h2>
+		<a href="#sec" id="btn">Playlist</a>
+		<img src="mountains_front.png" id="mountains_front">
+	</section>
+
+
+	<div class="sec" id="sec">
+		<h2>Nuestras playlist </h2>
+<ul class="playlist">
+	<li><a href="https://youtube.com/playlist?list=PLPdyhC4j_sD-rUADMf_DeBtDin82axAZC" target="_blank">Playlist Espanish</a></li>
+</ul>
+<ul class="playlist2">
+	<li><a href="https://www.youtube.com/watch?v=04sG8yfkmvs&t=769s" target="_blank">Playlist English</a></li>
+</ul>
+<p><br>Hola querido usuario aqui estan las diferentes playlist que te ofrecemos<br><br></p>
+
+<!-- Reloj  -->
+  <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<body>
+<h1 id="HoraActual" class="hora"> </h1>
+</body>
+<head>
+  <script type="text/javascript">
+showTime();
+function showTime(){
+myDate = new Date();
+hours = myDate.getHours();
+minutes = myDate.getMinutes();
+seconds = myDate.getSeconds();
+if (hours < 10) hours = 0 + hours;
+
+if (minutes < 10) minutes = "0" + minutes;
+
+if (seconds < 10) seconds = "0" + seconds;
+
+$("#HoraActual").text(hours+ ":" +minutes+ ":" +seconds);
+setTimeout("showTime()", 1000);
+}
+  </script>
+  <style type="text/css">
+
+.hora {
+font-family: Arial,sans-serif;
+color: white;
+position: absolute;
+right: 50px;
+}
+  </style>
+</head>
+
+
+
+
+<!-- Barra social -->
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">  
+</head>
+<div class="icon-bar1">
+	<a href="#" target="_blank"  class="discord"><i class="fab fa-discord"></i></a>
+</div>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<div class="icon-bar2">
+	<a href="#" target="_blank"  class="twitter"><i class="fa fa-twitter"></i></a>
+</div>
+<div class="icon-bar3">
+	<a href="https://www.instagram.com/pablithopp/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
+</div>
+<div class="icon-bar4">
+	<a href="https://www.youtube.com/channel/UCfzlOq5qWq18HqKsx0cE5Dw" target="_blank"  class="youtube"><i class="fa fa-youtube"></i></a>
+</div>
+<style type="text/css">
+  /* Posicion de barra */
+.icon-bar1 {
+  position: absolute;
+  top: 620px;
+  left: 0.05;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Aplicar estilo a los enlaces de la barra de iconos */
+.icon-bar1 a {
+  display: block;
+  text-align: center;
+  padding: 25;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+.icon-bar1 {
+  position: absolute;
+  top: 250px;
+  left: 95px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar2 a {
+  display: block;
+  text-align: center;
+  padding: 25;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+.icon-bar2 {
+  position: absolute;
+  top: 250px;
+  left: 60px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.icon-bar3 a {
+  display: block;
+  text-align: center;
+  padding: 25;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+.icon-bar3 {
+  position: absolute;
+  top: 250px;
+  left: 130px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.icon-bar4 a {
+  display: block;
+  text-align: center;
+  padding: 25;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+.icon-bar4 {
+  position: absolute;
+  top: 248px;
+  left: 160px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+
+.discord {
+  background: #1c0522;
+  color: white;
+}
+
+.twitter {
+  background: #1c0522;
+  color: white;
+}
+
+
+.instagram {
+  background: #1c0522;
+  color: white;
+}
+
+.youtube {
+  background:#1c0522;
+  color: white;
+}
+</style>
+<script type="text/javascript">
+	let stars = document.getElementById('starts');
+	let moon = document.getElementById('moon');
+	let mountains_behind = document.getElementById('mountains_behind');
+	let text = document.getElementById('text');
+	let btn = document.getElementById('btn');
+	let mountains_front = document.getElementById('mountains_front');
+	let header = document.querySelector('header')
+
+	window.addEventListener('scroll', function(){
+		let value = window.scrollY;
+		starts.style.left = value * 0.25 + 'px';
+		moon.style.top = value * 1.05 + 'px';
+		mountains_behind.style.top = value * 0.5 + 'px';
+		mountains_front.style.top = value * 0 + 'px';
+		text.style.marginRight = value * 4 + 'px';
+		text.style.marginTop = value * 1.5 + 'px';
+		btn.style.marginTop = value * 2.0 + 'px';
+		header.style.Top = value * 0.5 + 'px';
+	   })
+</script>
+</div>
+</body>
+</html>
+
+
+
+
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+.playlist{
+	display: flex;
+	position: absolute;
+	right: 300px;
+	top: 170px;
+}
+.playlist li{
+	list-style: none;
+	margin-left: 20px;
+}
+.playlist li a{
+	text-decoration: none;
+	padding: 10px 20px;
+	color: #fff;
+	border-radius: 20px;
+}
+.playlist li a:hover,
+.playlist li a
+{
+	background: #fff;
+	color: #2b1055;
+}
+.playlist2{
+	display: flex;
+	position: absolute;
+	right: 310px;
+	top: 230px;
+}
+.playlist2 li{
+	list-style: none;
+	margin-left: 20px;
+}
+.playlist2 li a{
+	text-decoration: none;
+	padding: 10px 20px;
+	color: #fff;
+	border-radius: 20px;
+}
+.playlist2 li a:hover,
+.playlist2 li a
+{
+	background: #fff;
+	color: #2b1055;
+}
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins' , sans-serif;
+}
+body
+{
+	min-height: 100vh;
+	background: linear-gradient(#2b1055,#7597de);
+}
+header
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 30px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 10000;
+}
+header .logo
+{
+	color: #fff;
+	font-weight: 700;
+	text-decoration: none;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+header ul 
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+header ul li 
+{
+	list-style: none;
+	margin-left: 20px;
+}
+header ul li a
+{
+	text-decoration: none;
+	padding: 6px 15px;
+	color: #fff;
+	border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.active
+{
+	background: #fff;
+	color: #2b1055;
+}
+section
+{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	padding: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+section::before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+		pointer-events: none;
+}
+section img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+		pointer-events: none;
+}
+section img#moon
+{
+	mix-blend-mode: screen;
+}
+section img#mountains_front
+{
+	z-index: 10;
+}
+
+#text{
+	position: absolute;
+	color: #fff;
+	white-space: nowrap;
+	font-size: 7.5vw;
+	z-index: 9;
+}
+#btn
+{
+	text-decoration: none;
+	display: inline-block;
+	padding: 8px 30px;
+	border-radius: 40px;
+	background: #fff;
+	color: #2b1055;
+	font-size: 1.5em;
+	z-index: 9;
+	transform: translateY(100px);
+}
+
+.sec{
+	position: relative;
+	padding: 50px;
+	background: #1c0522;
+}
+.sec h2{
+	font-size: 3.5em;
+	color: #fff;
+	background: #1c0522;
+}
+.sec p{
+	font-size: 1.2em;
+	color: #fff;
+	background: #1c0522;
+}
+</style>

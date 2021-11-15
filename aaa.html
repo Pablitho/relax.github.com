@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Título</title>
+</head>
+  <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<body>
+<h1 id="HoraActual" class="nashe"> </h1>
+</body>
+<head>
+  <script type="text/javascript">
+    // JavaScript code
+showTime();
+function showTime(){
+myDate = new Date();
+hours = myDate.getHours();
+minutes = myDate.getMinutes();
+seconds = myDate.getSeconds();
+if (hours < 10) hours = 0 + hours;
+
+if (minutes < 10) minutes = "0" + minutes;
+
+if (seconds < 10) seconds = "0" + seconds;
+
+$("#HoraActual").text(hours+ ":" +minutes+ ":" +seconds);
+setTimeout("showTime()", 1000);
+}
+  </script>
+  <style type="text/css">
+    /* CSS code */
+
+.nashe {
+font-family: Arial,sans-serif;
+color: #FF214F;
+}
+  </style>
+</head>
